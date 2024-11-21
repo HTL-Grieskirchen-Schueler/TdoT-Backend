@@ -41,10 +41,10 @@ namespace TdoT_Backend.Services
             return JsonSerializer.Deserialize<NodeDto[]>(openStream) ?? throw new FileNotFoundException();
         }
 
-        public byte[] GetFloorPlan(int floor)
+        public byte[] GetFloorPlan(int floor)   
         {
             var fileName = floor + ".svg";
-            var fileBytes = File.ReadAllBytes(_basePath + fileName);
+            var fileBytes = File.ReadAllBytes(_basePath + "floorPlans/" + fileName);
             return fileBytes;
         }
 

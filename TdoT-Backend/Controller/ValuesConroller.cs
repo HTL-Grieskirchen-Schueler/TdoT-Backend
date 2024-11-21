@@ -9,7 +9,7 @@ namespace TdoT_Backend.Controller
     [ApiController]
     public class ValuesController(DataService service) : ControllerBase
     {
-        [HttpGet("navigation/floorsvg?floor={floor}")]
+        [HttpGet("navigation/floorsvg")]
         public IActionResult GetFloorPlan(int floor)
         {
             return File(service.GetFloorPlan(floor), contentType: "image/svg+xml");

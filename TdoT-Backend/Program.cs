@@ -15,10 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services
     .AddEndpointsApiExplorer()
     .AddSwaggerGen()
-    .AddSwaggerGen(x => x.SwaggerDoc(
-        swaggerVersion,
-        new OpenApiInfo { Title = swaggerTitle, Version = swaggerVersion }
-    ))
+    .AddSwaggerGen()
     .AddCors(options => options.AddPolicy(
         corsKey,
         x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()
@@ -29,13 +26,14 @@ builder.Services.AddScoped<DataService>();
 
 var app = builder.Build();
 
-app.UseCors(corsKey);
+app.MapControllers();
 
+app.UseCors(corsKey);
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
     app.UseSwagger();
-    app.UseSwaggerUI(x => x.SwaggerEndpoint($"/swagger/{swaggerVersion}/swagger.json", swaggerTitle));
+    app.UseSwaggerUI();
 }
 
 app.Run();
