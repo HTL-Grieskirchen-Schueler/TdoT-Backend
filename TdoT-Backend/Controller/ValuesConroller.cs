@@ -40,13 +40,26 @@ namespace TdoT_Backend.Controller
         [HttpGet("trialdays")]
         public List<DateOnly> GetTrialdays()
         {
-            return service.GetTrialdays().Select(x => x.Date).ToList();
+            var registrations = service.GetRegistrations();
+            return service.GetTrialdays().Where(t =>
+            {
+                var participants = registrations.Where(r => r.Date == t.Date).Count();
+                return participants < t.MaxParticipants;
+            }).Select(x => x.Date).ToList();
         }
 
         [HttpPost("trialdays/registration")]
-        public void PostRegistration(RegistrationDto registration)
+        public IActionResult PostRegistration(RegistrationDto registration)
         {
+            var maxParticipants = service.GetTrialdays().First(t => t.Date == registration.Date).MaxParticipants;
+            var participants = service.GetRegistrations().Where(r => r.Date == registration.Date).Count();
+
+            if (participants > maxParticipants)
+            {
+                return Problem("There already are too many participants!");
+            }
             service.PostRegistration(registration);
+            return Ok();
         }
     }
 }

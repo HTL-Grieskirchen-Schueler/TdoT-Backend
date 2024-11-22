@@ -16,19 +16,26 @@ namespace TdoT_Backend.Services
             PropertyNameCaseInsensitive = true,
         };
 
-
-        public void PostRegistration(RegistrationDto registration)
+        public List<RegistrationDto> GetRegistrations()
         {
             string fileName = _basePath + "registrations.json";
 
             if (!File.Exists(fileName))
             {
-                File.WriteAllText(fileName, "[]"); 
+                File.WriteAllText(fileName, "[]");
             }
 
             string existingJson = File.ReadAllText(fileName);
 
             var existingRegistrations = JsonSerializer.Deserialize<RegistrationDto[]>(existingJson, options) ?? [];
+            return [.. existingRegistrations];
+        }
+
+        public void PostRegistration(RegistrationDto registration)
+        {
+            string fileName = _basePath + "registrations.json";
+
+            var existingRegistrations = GetRegistrations();
             var updatedRegistrations = existingRegistrations.Append(registration);
 
             string registrationJson = JsonSerializer.Serialize(updatedRegistrations, options); 
