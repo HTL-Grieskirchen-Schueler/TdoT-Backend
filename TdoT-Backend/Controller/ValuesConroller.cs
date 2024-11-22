@@ -48,10 +48,15 @@ public class ValuesController(DataService service) : ControllerBase
     [HttpPost("trialdays/registration")]
     public IActionResult PostRegistration(RegistrationDto registration)
     {
-        var maxParticipants = service.GetTrialdays().First(t => t.Date == registration.Date).MaxParticipants;
-        var participants = service.GetRegistrations().Count(r => r.Date == registration.Date);
+        var participants = service.GetRegistrations().Where(r => r.Date == registration.Date).ToList();
+        if (participants.Contains(registration))
+        {
+            return Problem("Anmeldung ist bereits vorhanden!");
+        }
 
-        if (participants > maxParticipants)
+        var maxParticipants = service.GetTrialdays().First(t => t.Date == registration.Date).MaxParticipants;
+
+        if (participants.Count() > maxParticipants)
         {
             return Problem("Es gibt bereits zu viele Anmeldungen für diesen Schnuppertag!");
         }
