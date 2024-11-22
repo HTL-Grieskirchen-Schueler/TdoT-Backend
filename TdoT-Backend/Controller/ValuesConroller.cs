@@ -40,7 +40,7 @@ public class ValuesController(DataService service) : ControllerBase
         var registrations = service.GetRegistrations();
         return service.GetTrialdays().Where(t =>
         {
-            var participants = registrations.Where(r => r.Date == t.Date).Count();
+            var participants = registrations.Count(r => r.Date == t.Date);
             return participants < t.MaxParticipants;
         }).Select(x => x.Date).ToList();
     }
@@ -49,11 +49,11 @@ public class ValuesController(DataService service) : ControllerBase
     public IActionResult PostRegistration(RegistrationDto registration)
     {
         var maxParticipants = service.GetTrialdays().First(t => t.Date == registration.Date).MaxParticipants;
-        var participants = service.GetRegistrations().Where(r => r.Date == registration.Date).Count();
+        var participants = service.GetRegistrations().Count(r => r.Date == registration.Date);
 
         if (participants > maxParticipants)
         {
-            return Problem("There already are too many participants!");
+            return Problem("Es gibt bereits zu viele Anmeldungen für diesen Schnuppertag!");
         }
         service.PostRegistration(registration);
         return Ok();
