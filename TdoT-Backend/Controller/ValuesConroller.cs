@@ -14,16 +14,19 @@ namespace TdoT_Backend.Controller
         {
             return File(service.GetFloorPlan(floor), contentType: "image/svg+xml");
         }
+
         [HttpGet("navigation/nodes")]
         public NodeDto[] GetNodes()
         {
             return service.GetNodes();
         }
+
         [HttpGet("navigation/activities")]
         public ActivityDto[] GetActivities()
         {
             return service.GetActivities();
         }
+
         [HttpGet("text/info")]
         public string GetInfoText()
         {
@@ -35,6 +38,7 @@ namespace TdoT_Backend.Controller
         {
             return service.GetTrialdays();
         }
+
         [HttpPost("trialdays/registration")]
         public void PostRegistration(RegistrationDto registration)
         {

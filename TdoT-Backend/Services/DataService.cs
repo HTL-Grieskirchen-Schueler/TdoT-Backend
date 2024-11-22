@@ -9,12 +9,19 @@ namespace TdoT_Backend.Services
     public class DataService()
     {
         private readonly string _basePath = "Data/";
+        private readonly JsonSerializerOptions options = new()
+        {
+            ReadCommentHandling = JsonCommentHandling.Skip,
+            AllowTrailingCommas = true,
+        };
+
 
         public void PostRegistration(RegistrationDto registration)
         {
             string fileName = _basePath + "registrations.json";
             using FileStream openStream = new FileStream(fileName, FileMode.Create, FileAccess.Write);
-            var json = JsonSerializer.Deserialize<RegistrationDto[]>(openStream) ?? [];
+            
+            var json = JsonSerializer.Deserialize<RegistrationDto[]>(openStream, options) ?? [];
             
             string registrationJson = JsonSerializer.Serialize(json.Append(registration));
             openStream.Write(System.Text.Encoding.UTF8.GetBytes(registrationJson));
@@ -22,16 +29,16 @@ namespace TdoT_Backend.Services
 
         public TrialDayDto[] GetTrialdays()
         {
-            using FileStream openStream = File.OpenRead(_basePath + "trialday.json");
+            using FileStream openStream = File.OpenRead(_basePath + "trialdays.json");
 
-            return JsonSerializer.Deserialize<TrialDayDto[]>(openStream) ?? throw new FileNotFoundException();
+            return JsonSerializer.Deserialize<TrialDayDto[]>(openStream, options) ?? throw new FileNotFoundException();
         }
 
         public ActivityDto[] GetActivities()
         {
             using FileStream openStream = File.OpenRead(_basePath + "activities.json");
 
-            return JsonSerializer.Deserialize<ActivityDto[]>(openStream) ?? throw new FileNotFoundException();
+            return JsonSerializer.Deserialize<ActivityDto[]>(openStream, options) ?? throw new FileNotFoundException();
         }
 
         public NodeDto[] GetNodes()
