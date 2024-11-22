@@ -12,6 +12,10 @@ namespace TdoT_Backend.Controller
         [HttpGet("navigation/floorsvg")]
         public IActionResult GetFloorPlan(int floor)
         {
+            if (floor != 0 && floor != 1)
+            {
+                return NotFound();
+            }
             return File(service.GetFloorPlan(floor), contentType: "image/svg+xml");
         }
 
@@ -34,9 +38,9 @@ namespace TdoT_Backend.Controller
         }
 
         [HttpGet("trialdays")]
-        public TrialDayDto[] GetTrialdays()
+        public List<DateOnly> GetTrialdays()
         {
-            return service.GetTrialdays();
+            return service.GetTrialdays().Select(x => x.Date).ToList();
         }
 
         [HttpPost("trialdays/registration")]

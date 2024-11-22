@@ -13,13 +13,14 @@ namespace TdoT_Backend.Services
         {
             ReadCommentHandling = JsonCommentHandling.Skip,
             AllowTrailingCommas = true,
+            PropertyNameCaseInsensitive = true,
         };
 
 
         public void PostRegistration(RegistrationDto registration)
         {
             string fileName = _basePath + "registrations.json";
-            using FileStream openStream = new FileStream(fileName, FileMode.Create, FileAccess.Write);
+            using FileStream openStream = new FileStream(fileName, FileMode.Create, FileAccess.ReadWrite);
             
             var json = JsonSerializer.Deserialize<RegistrationDto[]>(openStream, options) ?? [];
             
