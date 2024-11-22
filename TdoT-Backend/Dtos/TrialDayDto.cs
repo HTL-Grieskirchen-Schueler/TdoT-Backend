@@ -1,8 +1,6 @@
-﻿namespace TdoT_Backend.Dtos
+﻿namespace TdoT_Backend.Dtos;
+public class TrialDayDto
 {
-    public class TrialDayDto
-    {
-        public DateOnly Date { get; set; }
-        public int MaxParticipants { get; set; }
-    }
+    public DateOnly Date { get; set; }
+    public int MaxParticipants { get; set; }
 }

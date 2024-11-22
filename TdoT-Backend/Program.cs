@@ -1,7 +1,3 @@
-using static System.Net.Mime.MediaTypeNames;
-using System.Drawing;
-using System.Xml.Linq;
-using Microsoft.OpenApi.Models;
 using TdoT_Backend.Services;
 
 
