@@ -20,12 +20,19 @@ namespace TdoT_Backend.Services
         public void PostRegistration(RegistrationDto registration)
         {
             string fileName = _basePath + "registrations.json";
-            using FileStream openStream = new FileStream(fileName, FileMode.Create, FileAccess.ReadWrite);
-            
-            var json = JsonSerializer.Deserialize<RegistrationDto[]>(openStream, options) ?? [];
-            
-            string registrationJson = JsonSerializer.Serialize(json.Append(registration));
-            openStream.Write(System.Text.Encoding.UTF8.GetBytes(registrationJson));
+
+            if (!File.Exists(fileName))
+            {
+                File.WriteAllText(fileName, "[]"); 
+            }
+
+            string existingJson = File.ReadAllText(fileName);
+
+            var existingRegistrations = JsonSerializer.Deserialize<RegistrationDto[]>(existingJson, options) ?? [];
+            var updatedRegistrations = existingRegistrations.Append(registration);
+
+            string registrationJson = JsonSerializer.Serialize(updatedRegistrations, options); 
+            File.WriteAllText(fileName, registrationJson);
         }
 
         public TrialDayDto[] GetTrialdays()

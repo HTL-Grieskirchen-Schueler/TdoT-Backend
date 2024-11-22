@@ -5,8 +5,6 @@ using Microsoft.OpenApi.Models;
 using TdoT_Backend.Services;
 
 
-string swaggerVersion = "v1";
-string swaggerTitle = "TdoTBE";
 string corsKey = "_myCorsKey";
 
 var builder = WebApplication.CreateBuilder(args);
