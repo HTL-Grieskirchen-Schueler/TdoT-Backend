@@ -1,0 +1,74 @@
+﻿[
+  {
+    "heading": "Vorraussetzungen",
+    "comboBox": [
+      {
+        "value": "AHS",
+        "description": "Positiver Abschluss der 8. Schulstufe oder eines höheren Jahrgangs."
+      },
+      {
+        "value": "NMS",
+        "desciption": "Positiver Abschluss der 8.Schulstufe gemäß Leistungsniveau Standard-AHS. Bei Leistungsniveau Standard, darf keine Bewertung schlechter als Gut vorliegen"
+      },
+      {
+        "value": "Polytechnisch",
+        "description": "Positiver Abschluss der 9. Schulstufe"
+      }
+    ]
+  },
+  {
+    "heading": "Anmeldung",
+    "paragraphs": [
+      {
+        "heading": "Online Anmeldung:",
+        "text": "Bis [DeadlineFürHomepageRegestrierung] via homepage. Zugangsdaten Aufbewahren!",
+        "info": "Hier sind hochzuladen: Schulnachricht, Geburtsurkunde, Meldezettel, Staatsbürgerschaftsnachweis"
+      },
+      {
+        "text": "Die Anmeldung ist nur an einer Schule möglich"
+      }
+    ]
+  },
+  {
+    "heading": "Aufnahme",
+    "paragraphs": [
+      {
+        "text": "Anwerber*innen aus NMS werden nach Reihungskriterien beurteilt. Für Anwerber*innen aus AHS und Polytechnischen Schulen gilt dieses nicht."
+      },
+      {
+        "text": "Bis [DeadlineFürReservierterPlatz] wird anhand der Schulnachricht ein vorläufiger Schulplatz vergeben. Dieser ist Sicher, sollte das Zeugnis den Aufnahmekriterien entsprechen."
+      },
+      {
+        "heading": "Schulerfolgsbestätigung",
+        "text": "Bis [DeadlineFürSchulerfolgsbestätigung] ist verbindlich eine Schulerfolgsbestätigung an [Mail] zu senden."
+      },
+      {
+        "heading": "Zugesicherter Schulplatz",
+        "text": "Bis [DeadlineFürZeugnisAbgabe] ist das Orginalzeugnis im Sekretariat abzugeben. Hiermit nehmen sie den zugesicherten Schulplatz verbindlich an."
+      }
+    ]
+  },
+  {
+    "heading": "Reihungskriterien",
+    "paragraphs": [
+      {
+        "text": "Sollten nicht alle Schulplätze vergeben werden, werden diese anhand der Warteliste vergeben."
+      },
+      {
+        "calculator": true
+      }
+    ]
+  },
+  {
+    "heading": "Aufnahmeprüfung",
+    "paragraphs": [
+      {
+        "text": "Werden die Bedingungen nicht erfülltr so muss eine Aufnahmeprüfung abgelegt werden."
+      },
+      {
+        "heading": "Termine",
+        "text": "Termin1, Termin2, Termin3"
+      }
+    ]
+  }
+]
