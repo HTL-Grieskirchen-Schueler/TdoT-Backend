@@ -68,6 +68,6 @@ public class DataService()
 
     public string GetText(string name)
     {
-        return File.ReadAllText(_basePath + "text/" + name + ".txt");
+        return File.ReadAllText(_basePath + "text/" + name);
     }
 }

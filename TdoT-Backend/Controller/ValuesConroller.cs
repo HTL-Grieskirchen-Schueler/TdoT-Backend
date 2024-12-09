@@ -13,6 +13,7 @@ public class ValuesController(DataService service) : ControllerBase
         {
             return NotFound();
         }
+
         return File(service.GetFloorPlan(floor), contentType: "image/svg+xml");
     }
 
@@ -31,7 +32,13 @@ public class ValuesController(DataService service) : ControllerBase
     [HttpGet("text/info")]
     public string GetInfoText()
     {
-        return service.GetText("SchnupperTagAnmeldung");
+        return service.GetText("SchnupperTagAnmeldung.txt");
+    }
+
+    [HttpGet("text/registration")]
+    public IActionResult GetRegistrationText()
+    {
+        return File(service.GetText("registration.json"), contentType: "application/json");
     }
 
     [HttpGet("trialdays")]
@@ -51,14 +58,14 @@ public class ValuesController(DataService service) : ControllerBase
         var participants = service.GetRegistrations().Where(r => r.Date == registration.Date).ToList();
         if (participants.Contains(registration))
         {
-            return Problem("Anmeldung ist bereits vorhanden!");
+            return BadRequest("Anmeldung ist bereits vorhanden!");
         }
 
         var maxParticipants = service.GetTrialdays().First(t => t.Date == registration.Date).MaxParticipants;
 
         if (participants.Count() > maxParticipants)
         {
-            return Problem("Es gibt bereits zu viele Anmeldungen für diesen Schnuppertag!");
+            return BadRequest("Es gibt bereits zu viele Anmeldungen für diesen Schnuppertag!");
         }
         service.PostRegistration(registration);
         return Ok();
