@@ -1,4 +1,7 @@
+using Microsoft.AspNetCore.Authentication;
+using TdoT_Backend.Middleware;
 using TdoT_Backend.Services;
+using AuthenticationMiddleware = TdoT_Backend.Middleware.AuthenticationMiddleware;
 
 
 string corsKey = "_myCorsKey";
@@ -17,6 +20,10 @@ builder.Services
     .AddControllers();
 
 builder.Services.AddScoped<DataService>();
+builder.Services.AddScoped<AdminService>();
+
+builder.Services.AddAuthentication("AdminScheme")
+    .AddScheme<AuthenticationSchemeOptions, AuthenticationMiddleware>("AdminScheme", options => { });
 
 var app = builder.Build();
 

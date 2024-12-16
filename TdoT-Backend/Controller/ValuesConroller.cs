@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Text;
+using System.Text.Unicode;
+using Microsoft.AspNetCore.Mvc;
 using TdoT_Backend.Dtos;
 using TdoT_Backend.Services;
 
@@ -38,7 +40,7 @@ public class ValuesController(DataService service) : ControllerBase
     [HttpGet("text/registration")]
     public IActionResult GetRegistrationText()
     {
-        return File(service.GetText("registration.json"), contentType: "application/json");
+        return File(Encoding.UTF8.GetBytes(service.GetText("registration.json")), contentType: "application/json");
     }
 
     [HttpGet("trialdays")]
