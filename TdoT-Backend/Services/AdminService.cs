@@ -8,22 +8,25 @@ public class AdminService
     {
         fileName = fileName.Trim('/');
         fileName = fileName.Trim('\\');
-        if (!File.Exists(fileName) || fileName.Contains(".."))
+        var path = Path.Combine("Data", fileName);
+        if (!File.Exists(path) || path.Contains("..") || fileName.Contains("~"))
         {
             return [];
         }
-        return File.ReadAllBytes(fileName);
+        return File.ReadAllBytes(path);
     }
 
     public bool PostFile(Stream file, string fileName)
     {
         fileName = fileName.Trim('/');
-        fileName = fileName.Trim('\\');
-        if (!File.Exists(fileName) || fileName.Contains("..") || fileName.Contains("~"))
+        fileName = fileName.Trim('\\');        
+        var path = Path.Combine("Data", fileName);
+
+        if (!File.Exists(path) || path.Contains("..") || path.Contains("~"))
         {
             return false;
         }
-        file.CopyTo(File.OpenWrite(fileName));
+        file.CopyTo(File.OpenWrite(path));
         return true;
     }
     

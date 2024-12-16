@@ -13,14 +13,19 @@ public class AdminController(AdminService service) : ControllerBase
     {
         if (fileName != null)
         {
-            return File(service.GetFile(fileName), "text/plain", Path.GetFileName(fileName));
+            var file = service.GetFile(fileName);
+            if (file.Length == 0)
+            {
+                return NotFound();
+            }
+            return File(file, "text/plain", Path.GetFileName(fileName));
         }
         return Ok(service.GetFiles());
     }
 
     [HttpPost("files")]
-    public void PostFiles(IFormFile file)
+    public void PostFiles(IFormFile file, string? fileName)
     {
-        service.PostFile(file.OpenReadStream(), file.FileName);
+        service.PostFile(file.OpenReadStream(), fileName ?? file.FileName);
     }
 }
