@@ -24,8 +24,8 @@ public class AdminController(AdminService service) : ControllerBase
     }
 
     [HttpPost("files")]
-    public void PostFiles(IFormFile file, string? fileName)
+    public IActionResult PostFiles(IFormFile file, string? fileName)
     {
-        service.PostFile(file.OpenReadStream(), fileName ?? file.FileName);
+        return service.PostFile(file.OpenReadStream(), fileName ?? file.FileName) ? Ok() : BadRequest();
     }
 }

@@ -24,9 +24,15 @@ public class AdminService
 
         if (!File.Exists(path) || path.Contains("..") || path.Contains("~"))
         {
+            file.Close();
             return false;
         }
-        file.CopyTo(File.OpenWrite(path));
+
+        var currentFile = File.OpenWrite(path);
+        currentFile.SetLength(0);
+        file.CopyTo(currentFile);
+        currentFile.Close();
+        file.Close();
         return true;
     }
     
