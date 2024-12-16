@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.OpenApi.Models;
 using TdoT_Backend.Middleware;
 using TdoT_Backend.Services;
 using AuthenticationMiddleware = TdoT_Backend.Middleware.AuthenticationMiddleware;
@@ -11,7 +12,16 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddEndpointsApiExplorer()
-    .AddSwaggerGen()
+    .AddSwaggerGen(o =>
+    {
+        o.AddSecurityDefinition("PasswordHeader", new OpenApiSecurityScheme
+        {
+            In = ParameterLocation.Header,
+            Name = "password",
+            Type = SecuritySchemeType.ApiKey,
+            Description = "Enter sha256 hash for authentication"
+        });
+    })
     .AddSwaggerGen()
     .AddCors(options => options.AddPolicy(
         corsKey,

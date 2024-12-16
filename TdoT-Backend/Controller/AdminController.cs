@@ -9,8 +9,18 @@ namespace TdoT_Backend.Controller;
 public class AdminController(AdminService service) : ControllerBase
 {
     [HttpGet("files")]
-    public IActionResult GetFiles()
+    public IActionResult GetFiles(string? fileName)
     {
+        if (fileName != null)
+        {
+            return File(service.GetFile(fileName), "text/plain", Path.GetFileName(fileName));
+        }
         return Ok(service.GetFiles());
+    }
+
+    [HttpPost("files")]
+    public void PostFiles(IFormFile file)
+    {
+        service.PostFile(file.OpenReadStream(), file.FileName);
     }
 }

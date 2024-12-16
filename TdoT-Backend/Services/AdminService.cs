@@ -4,6 +4,29 @@ namespace TdoT_Backend.Services;
 
 public class AdminService
 {
+    public byte[] GetFile(string fileName)
+    {
+        fileName = fileName.Trim('/');
+        fileName = fileName.Trim('\\');
+        if (!File.Exists(fileName) || fileName.Contains(".."))
+        {
+            return [];
+        }
+        return File.ReadAllBytes(fileName);
+    }
+
+    public bool PostFile(Stream file, string fileName)
+    {
+        fileName = fileName.Trim('/');
+        fileName = fileName.Trim('\\');
+        if (!File.Exists(fileName) || fileName.Contains("..") || fileName.Contains("~"))
+        {
+            return false;
+        }
+        file.CopyTo(File.OpenWrite(fileName));
+        return true;
+    }
+    
     public List<FileDto> GetFiles()
     {
         return
