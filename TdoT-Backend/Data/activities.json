@@ -1,6 +1,22 @@
 [
   {
-    "Name": "sampleActivity",
+    "Name": "Security",
     "Description": "Ist dein Passwort sicher?"
+  },
+  {
+    "Name": "Sprachen",
+    "Description": "Deutsch, Englisch, Französisch, Spanisch und Russisch"
+  },
+  {
+    "Name": "Naturwissenschaften",
+    "Description": "Chemie und Physik"
+  },
+  {
+    "Name": "Programmieren",
+    "Description": "Ein Wunder der Technik"
+  },
+  {
+    "Name": "Game Development",
+    "Description": ""
   }
 ]
