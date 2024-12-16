@@ -1,18 +1,9 @@
 [
   {
     "heading": "Vorraussetzungen",
-    "comboBox": [
+    "paragraphs": [
       {
-        "value": "AHS",
-        "description": "Positiver Abschluss der 8. Schulstufe oder eines höheren Jahrgangs."
-      },
-      {
-        "value": "NMS",
-        "desciption": "Positiver Abschluss der 8.Schulstufe gemäß Leistungsniveau Standard-AHS. Bei Leistungsniveau Standard, darf keine Bewertung schlechter als Gut vorliegen"
-      },
-      {
-        "value": "Polytechnisch",
-        "description": "Positiver Abschluss der 9. Schulstufe"
+        "text": "Keine negative Note in Mathe, Deutsch oder Englisch."
       }
     ]
   },
@@ -53,9 +44,6 @@
     "paragraphs": [
       {
         "text": "Sollten nicht alle Schulplätze vergeben werden, werden diese anhand der Warteliste vergeben."
-      },
-      {
-        "calculator": true
       }
     ]
   },
