@@ -42,42 +42,42 @@ public class AdminService
         [
             new FileDto()
             {
-                Name = "Schulanmeldungs Text",
+                Name = "registration.json",
                 Description = "Text für die Schulanmeldung",
                 GetUrl = $"/files?fileName=text/registration.json",
                 PostUrl = $"/files?fileName=text/registration.json",
             },
             new FileDto()
             {
-                Name = "Schnuppertag",
+                Name = "SchnupperTagAnmeldung.txt",
                 Description = "Text für den Schnuppertag",
                 GetUrl = $"/files?fileName=text/SchnupperTagAnmeldung.txt",
                 PostUrl = $"/files?fileName=text/SchnupperTagAnmeldung.txt",
             },
             new FileDto()
             {
-                Name = "Aktivitäten",
+                Name = "activities.json",
                 Description = "Aktivitäten währen dem Schnuppertag",
                 GetUrl = $"/files?fileName=activities.json",
                 PostUrl = $"/files?fileName=activities.json",
             },
             new FileDto()
             {
-                Name = "Knotenpunkte",
+                Name = "nodes.json",
                 Description = "Knotenpunkte für die Navigation am Schnuppertag",
                 GetUrl = $"/files?fileName=nodes.json",
                 PostUrl = $"/files?fileName=nodes.json",
             },
             new FileDto()
             {
-                Name = "Schnuppertaganmeldungen",
+                Name = "registrations.json",
                 Description = "Liste an Schnuppertaganmeldungen",
                 GetUrl = $"/files?fileName=registrations.json",
                 PostUrl = $"/files?fileName=registrations.json",
             },
             new FileDto()
             {
-                Name = "Schnuppertage",
+                Name = "trialdays.json",
                 Description = "Liste an Schnuppertage",
                 GetUrl = $"/files?fileName=trialdays.json",
                 PostUrl = $"/files?fileName=trialdays.json",
