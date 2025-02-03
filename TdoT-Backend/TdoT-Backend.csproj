@@ -8,10 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Data\NewFolder\**" />
-    <Content Remove="Data\NewFolder\**" />
-    <EmbeddedResource Remove="Data\NewFolder\**" />
-    <None Remove="Data\NewFolder\**" />
+    <None Update="Data\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

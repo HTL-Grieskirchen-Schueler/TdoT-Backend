@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.OpenApi.Models;
 using TdoT_Backend.Middleware;
 using TdoT_Backend.Services;
@@ -36,6 +37,15 @@ builder.Services.AddAuthentication("AdminScheme")
     .AddScheme<AuthenticationSchemeOptions, AuthenticationMiddleware>("AdminScheme", options => { });
 
 var app = builder.Build();
+
+app.UseDefaultFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "Data/html/")),
+    RequestPath = "/admin-panel", 
+});
+
+app.Map("/", () => Results.Redirect("/admin-panel/index.html"));
 
 app.MapControllers();
 
