@@ -90,7 +90,7 @@ public class AdminService
     public object? PutPlaceholders(PlaceholderDto[] placeholder)
     {
         var json = JsonSerializer.Serialize(placeholder);
-        File.WriteAllText(_basePath + "placeholders.json", json);
+        File.WriteAllText(_basePath + "placeholder.json", json);
         return null;
     }
 }
