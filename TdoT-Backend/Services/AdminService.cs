@@ -5,7 +5,7 @@ namespace TdoT_Backend.Services;
 
 public class AdminService
 {
-    private readonly string _basePath = "Data/";
+    private readonly string _basePath = AppContext.BaseDirectory + "Data/";
     public byte[] GetFile(string fileName)
     {
         fileName = fileName.Trim('/');
