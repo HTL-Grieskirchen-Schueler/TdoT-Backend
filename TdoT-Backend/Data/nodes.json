@@ -1,2 +1,141 @@
 [
+  {
+    "id": 1,
+    "name": "e13",
+    "width": "80",
+    "height": "90"
+  },
+  {
+    "id": 2,
+    "name": "e14",
+    "width": "198",
+    "height": "90"
+  },
+  {
+    "id": 3,
+    "name": "e15",
+    "width": "316",
+    "height": "90"
+  },
+  {
+    "id": 4,
+    "name": "e16",
+    "width": "418",
+    "height": "90"
+  },
+  {
+    "id": 5,
+    "name": "e17",
+    "width": "519",
+    "height": "90"
+  },
+  {
+    "id": 6,
+    "name": "e18",
+    "width": "620",
+    "height": "90"
+  },
+  {
+    "id": 7,
+    "name": "e19",
+    "width": "710",
+    "height": "90"
+  },
+  {
+    "id": 8,
+    "name": "e20",
+    "width": "800",
+    "height": "90"
+  },
+  {
+    "id": 9,
+    "name": "stiegeEingang",
+    "width": "90",
+    "height": "270"
+  },
+  {
+    "id": 10,
+    "name": "e07",
+    "width": "220",
+    "height": "310"
+  },
+  {
+    "id": 11,
+    "name": "e05",
+    "width": "370",
+    "height": "310"
+  },
+  {
+    "id": 12,
+    "name": "e04",
+    "width": "500",
+    "height": "310"
+  },
+  {
+    "id": 13,
+    "name": "e02",
+    "width": "650",
+    "height": "310"
+  },
+  {
+    "id": 14,
+    "name": "e33",
+    "width": "167",
+    "height": "270"
+  },
+  {
+    "id": 15,
+    "name": "e32",
+    "width": "254",
+    "height": "270"
+  },
+  {
+    "id": 16,
+    "name": "e31",
+    "width": "341",
+    "height": "270"
+  },
+  {
+    "id": 17,
+    "name": "e30",
+    "width": "428",
+    "height": "270"
+  },
+  {
+    "id": 18,
+    "name": "wcEg",
+    "width": "603",
+    "height": "220"
+  },
+  {
+    "id": 19,
+    "name": "stiegeBuffet",
+    "width": "603",
+    "height": "150"
+  },
+  {
+    "id": 20,
+    "name": "eckeE13",
+    "width": "60",
+    "height": "110"
+  },
+  {
+    "id": 21,
+    "name": "eckeE20",
+    "width": "800",
+    "height": "110"
+  },
+  {
+    "id": 22,
+    "name": "eckeE01",
+    "width": "800",
+    "height": "290"
+  },
+  {
+    "id": 23,
+    "name": "eckeE09",
+    "width": "60",
+    "height": "290"
+  }
 ]
+  

@@ -56,7 +56,7 @@ public class DataService()
     {
         using FileStream openStream = File.OpenRead(_basePath + "nodes.json");
 
-        return JsonSerializer.Deserialize<NodeDto[]>(openStream) ?? throw new FileNotFoundException();
+        return JsonSerializer.Deserialize<NodeDto[]>(openStream, options) ?? throw new FileNotFoundException();
     }
 
     public byte[] GetFloorPlan(int floor)
@@ -86,6 +86,6 @@ public class DataService()
     {
         using var openStream = File.OpenRead(_basePath + "placeholder.json");
 
-        return JsonSerializer.Deserialize<PlaceholderDto[]>(openStream);
+        return JsonSerializer.Deserialize<PlaceholderDto[]>(openStream, options);
     }
 }
