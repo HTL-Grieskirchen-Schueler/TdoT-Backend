@@ -13,7 +13,7 @@ public class AdminService
         {
             return [];
         }
-        return File.ReadAllBytes(path);
+        return File.ReadAllBytes(AppContext.BaseDirectory + path);
     }
 
     public bool PostFile(Stream file, string fileName)
@@ -28,7 +28,7 @@ public class AdminService
             return false;
         }
 
-        var currentFile = File.OpenWrite(path);
+        var currentFile = File.OpenWrite(AppContext.BaseDirectory + path);
         currentFile.SetLength(0);
         file.CopyTo(currentFile);
         currentFile.Close();

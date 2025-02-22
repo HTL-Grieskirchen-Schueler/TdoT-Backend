@@ -41,11 +41,11 @@ var app = builder.Build();
 app.UseDefaultFiles();
 app.UseStaticFiles(new StaticFileOptions
 {
-    FileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "Data/html/")),
-    RequestPath = "/admin-panel", 
+    FileProvider = new PhysicalFileProvider(Path.Combine(AppContext.BaseDirectory, "Data/html/")),
+    RequestPath = "", 
 });
 
-app.Map("/", () => Results.Redirect("/admin-panel/index.html"));
+app.Map("/", () => Results.Redirect("index.html"));
 
 app.MapControllers();
 
