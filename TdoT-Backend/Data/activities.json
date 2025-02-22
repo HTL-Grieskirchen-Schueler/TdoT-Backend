@@ -1,22 +1,27 @@
 [
   {
     "Name": "Security",
+    "Room": "o08",
     "Description": "Ist dein Passwort sicher?"
   },
   {
     "Name": "Sprachen",
+    "Room": "o12",
     "Description": "Deutsch, Englisch, Französisch, Spanisch und Russisch"
   },
   {
     "Name": "Naturwissenschaften",
+    "Room": "o13",
     "Description": "Chemie und Physik"
   },
   {
     "Name": "Programmieren",
+    "Room": "o14",
     "Description": "Ein Wunder der Technik"
   },
   {
     "Name": "Game Development",
+    "Room": "o05",
     "Description": ""
   }
 ]
