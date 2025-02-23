@@ -8,10 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Data\NewFolder\**" />
-    <Content Remove="Data\NewFolder\**" />
-    <EmbeddedResource Remove="Data\NewFolder\**" />
-    <None Remove="Data\NewFolder\**" />
+    <None Update="Data\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -23,4 +22,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+
+	<Target Name="BuildAngular" AfterTargets="Build">
+		<Exec Command="pnpm install" WorkingDirectory="../TdoT-Admin-Panel" />
+		<Exec Command="pnpm run build" WorkingDirectory="../TdoT-Admin-Panel" />
+
+		<!-- Windows -->
+		<Exec Command="xcopy /E /I /Y ..\TdoT-Admin-Panel\dist\tdo-tadmin-panel\browser $(OutputPath)Data\html" Condition=" '$(OS)' == 'Windows_NT' " />
+		<!-- Linux/macOS -->
+		<Exec Command="cp -r ../TdoT-Admin-Panel/dist/tdo-tadmin-panel/browser $(OutputPath)Data/html" Condition=" '$(OS)' != 'Windows_NT' " />
+	</Target>
 </Project>

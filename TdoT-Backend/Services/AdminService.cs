@@ -5,7 +5,7 @@ namespace TdoT_Backend.Services;
 
 public class AdminService
 {
-    private readonly string _basePath = "Data/";
+    private readonly string _basePath = AppContext.BaseDirectory + "Data/";
     public byte[] GetFile(string fileName)
     {
         fileName = fileName.Trim('/');
@@ -15,7 +15,7 @@ public class AdminService
         {
             return [];
         }
-        return File.ReadAllBytes(path);
+        return File.ReadAllBytes(AppContext.BaseDirectory + path);
     }
 
     public bool PostFile(Stream file, string fileName)
@@ -30,7 +30,7 @@ public class AdminService
             return false;
         }
 
-        var currentFile = File.OpenWrite(path);
+        var currentFile = File.OpenWrite(AppContext.BaseDirectory + path);
         currentFile.SetLength(0);
         file.CopyTo(currentFile);
         currentFile.Close();

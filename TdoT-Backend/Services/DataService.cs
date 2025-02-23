@@ -4,7 +4,7 @@ using TdoT_Backend.Dtos;
 namespace TdoT_Backend.Services;
 public class DataService()
 {
-    private readonly string _basePath = "Data/";
+    private readonly string _basePath = AppContext.BaseDirectory + "Data/";
     private readonly JsonSerializerOptions options = new()
     {
         ReadCommentHandling = JsonCommentHandling.Skip,
