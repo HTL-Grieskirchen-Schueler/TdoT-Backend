@@ -23,7 +23,7 @@
     </None>
   </ItemGroup>
 
-	<Target Name="BuildAngular" AfterTargets="Build">
+	<Target Name="BuildAngular" AfterTargets="Build" Condition="Exists('../TdoT-Admin-Panel/package.json')">
 		<Exec Command="pnpm install" WorkingDirectory="../TdoT-Admin-Panel" />
 		<Exec Command="pnpm run build" WorkingDirectory="../TdoT-Admin-Panel" />
 
