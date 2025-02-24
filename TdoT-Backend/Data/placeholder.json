@@ -1,6 +1,18 @@
 [
   {
-    "Key": "[DeadlineFurHomepageRegestrierung]",
+    "Key": "%DeadlineFurHomepageRegestrierung%",
     "Value": "28.2.2025"
+  },
+  {
+    "Key": "%DeadlineFurReservierterPlatz%",
+    "Value": "1.3.2025"
+  },
+  {
+    "Key": "%DeadlineFürSchulerfolgsbestatigung%",
+    "Value": "03.03.2025"
+  },
+  {
+    "Key": "%DeadlineFurZeugnisAbgabe%",
+    "Value": "1.3.2025"
   }
 ]
