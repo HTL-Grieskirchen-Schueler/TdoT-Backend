@@ -30,6 +30,6 @@
 		<!-- Windows -->
 		<Exec Command="xcopy /E /I /Y ..\TdoT-Admin-Panel\dist\tdo-tadmin-panel\browser $(OutputPath)Data\html" Condition=" '$(OS)' == 'Windows_NT' " />
 		<!-- Linux/macOS -->
-		<Exec Command="cp -r ../TdoT-Admin-Panel/dist/tdo-tadmin-panel/browser $(OutputPath)Data/html" Condition=" '$(OS)' != 'Windows_NT' " />
+		<Exec Command="cp -r ../TdoT-Admin-Panel/dist/tdo-tadmin-panel/browser/* $(OutputPath)Data/html" Condition=" '$(OS)' != 'Windows_NT' " />
 	</Target>
 </Project>
