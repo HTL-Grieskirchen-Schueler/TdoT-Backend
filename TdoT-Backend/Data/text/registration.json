@@ -12,7 +12,7 @@
     "paragraphs": [
       {
         "heading": "Online Anmeldung:",
-        "text": "Bis [DeadlineFürHomepageRegestrierung] via homepage. Zugangsdaten Aufbewahren!",
+        "text": "Bis %DeadlineFurHomepageRegestrierung% via homepage. Zugangsdaten Aufbewahren!",
         "info": "Hier sind hochzuladen: \nSchulnachricht, Geburtsurkunde, Meldezettel, Staatsbürgerschaftsnachweis"
       },
       {
@@ -27,15 +27,15 @@
         "text": "Anwerber*innen aus NMS werden nach Reihungskriterien beurteilt. Für Anwerber*innen aus AHS und Polytechnischen Schulen gilt dieses nicht."
       },
       {
-        "text": "Bis [DeadlineFürReservierterPlatz] wird anhand der Schulnachricht ein vorläufiger Schulplatz vergeben. Dieser ist Sicher, sollte das Zeugnis den Aufnahmekriterien entsprechen."
+        "text": "Bis %DeadlineFurReservierterPlatz% wird anhand der Schulnachricht ein vorläufiger Schulplatz vergeben. Dieser ist Sicher, sollte das Zeugnis den Aufnahmekriterien entsprechen."
       },
       {
         "heading": "Schulerfolgsbestätigung",
-        "text": "Bis [DeadlineFürSchulerfolgsbestätigung] ist verbindlich eine Schulerfolgsbestätigung an [Mail] zu senden."
+        "text": "Bis %DeadlineFürSchulerfolgsbestatigung% ist verbindlich eine Schulerfolgsbestätigung an [Mail] zu senden."
       },
       {
         "heading": "Zugesicherter Schulplatz",
-        "text": "Bis [DeadlineFürZeugnisAbgabe] ist das Orginalzeugnis im Sekretariat abzugeben. Hiermit nehmen sie den zugesicherten Schulplatz verbindlich an."
+        "text": "Bis %DeadlineFurZeugnisAbgabe% ist das Orginalzeugnis im Sekretariat abzugeben. Hiermit nehmen sie den zugesicherten Schulplatz verbindlich an."
       }
     ]
   },
