@@ -87,10 +87,15 @@ public class AdminService
         ];
     }
 
-    public object? PutPlaceholders(PlaceholderDto[] placeholder)
+    public void PutPlaceholders(PlaceholderDto[] placeholder)
     {
         var json = JsonSerializer.Serialize(placeholder);
         File.WriteAllText(_basePath + "placeholder.json", json);
-        return null;
+    }
+
+    public void PutActivities(ActivityDto[] activities)
+    {
+        var json = JsonSerializer.Serialize(activities);
+        File.WriteAllText(_basePath + "activities.json", json);
     }
 }

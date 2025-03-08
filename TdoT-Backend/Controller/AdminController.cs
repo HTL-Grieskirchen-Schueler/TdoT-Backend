@@ -10,7 +10,7 @@ namespace TdoT_Backend.Controller;
 public class AdminController(AdminService adminService, DataService dataService) : ControllerBase
 {
     [HttpGet("files")]
-    public IActionResult GetFiles(string? fileName)
+    public ActionResult GetFiles(string? fileName)
     {
         if (fileName != null)
         {
@@ -25,20 +25,28 @@ public class AdminController(AdminService adminService, DataService dataService)
     }
 
     [HttpPost("files")]
-    public IActionResult PostFiles(IFormFile file, string? fileName)
+    public ActionResult PostFiles(IFormFile file, string? fileName)
     {
         return adminService.PostFile(file.OpenReadStream(), fileName ?? file.FileName) ? Ok() : BadRequest();
     }
 
     [HttpGet("placeholder")]
-    public IActionResult GetPlaceholders()
+    public ActionResult GetPlaceholders()
     {
         return Ok(dataService.GetPlaceholders() ?? throw new FileNotFoundException());
     }
 
     [HttpPut("placeholder")]
-    public IActionResult PutPlaceholders(PlaceholderDto[] placeholder)
+    public ActionResult PutPlaceholders(PlaceholderDto[] placeholder)
     {
-        return Ok(adminService.PutPlaceholders(placeholder));
+        adminService.PutPlaceholders(placeholder);
+        return Ok();
+    }
+
+    [HttpPut("activities")]
+    public ActionResult PutActivities(ActivityDto[] activities)
+    {
+        adminService.PutActivities(activities);
+        return Ok();
     }
 }
