@@ -1,102 +1,402 @@
 [
   {
-    "id": 1, "name": "e13", "width": "80", "height": "90", "Story": 0 },
+    "id": 1,
+    "name": "e13",
+    "story": 0,
+    "width": "80",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 2, "name": "e14", "width": "198", "height": "90", "Story": 0 },
+    "id": 2,
+    "name": "e14",
+    "story": 0,
+    "width": "198",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 3, "name": "e15", "width": "316", "height": "90", "Story": 0 },
+    "id": 3,
+    "name": "e15",
+    "story": 0,
+    "width": "316",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 4, "name": "e16", "width": "418", "height": "90", "Story": 0 },
+    "id": 4,
+    "name": "e16",
+    "story": 0,
+    "width": "418",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 5, "name": "e17", "width": "519", "height": "90", "Story": 0 },
+    "id": 5,
+    "name": "e17",
+    "story": 0,
+    "width": "519",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 6, "name": "e18", "width": "620", "height": "90", "Story": 0 },
+    "id": 6,
+    "name": "e18",
+    "story": 0,
+    "width": "620",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 7, "name": "e19", "width": "710", "height": "90", "Story": 0 },
+    "id": 7,
+    "name": "e19",
+    "story": 0,
+    "width": "710",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 8, "name": "e20", "width": "800", "height": "90", "Story": 0 },
+    "id": 8,
+    "name": "e20",
+    "story": 0,
+    "width": "800",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 9, "name": "stiegeEingang", "width": "90", "height": "270", "Story": 0 },
+    "id": 9,
+    "name": "stiegeEingang",
+    "story": 0,
+    "width": "90",
+    "height": "270",
+    "neighbors": []
+  },
   {
-    "id": 10, "name": "e07", "width": "220", "height": "310", "Story": 0 },
+    "id": 10,
+    "name": "e07",
+    "story": 0,
+    "width": "220",
+    "height": "310",
+    "neighbors": []
+  },
   {
-    "id": 11, "name": "e05", "width": "370", "height": "310", "Story": 0 },
+    "id": 11,
+    "name": "e05",
+    "story": 0,
+    "width": "370",
+    "height": "310",
+    "neighbors": []
+  },
   {
-    "id": 12, "name": "e04", "width": "500", "height": "310", "Story": 0 },
+    "id": 12,
+    "name": "e04",
+    "story": 0,
+    "width": "500",
+    "height": "310",
+    "neighbors": []
+  },
   {
-    "id": 13, "name": "e02", "width": "650", "height": "310", "Story": 0 },
+    "id": 13,
+    "name": "e02",
+    "story": 0,
+    "width": "650",
+    "height": "310",
+    "neighbors": []
+  },
   {
-    "id": 14, "name": "e33", "width": "167", "height": "270", "Story": 0 },
+    "id": 14,
+    "name": "e33",
+    "story": 0,
+    "width": "167",
+    "height": "270",
+    "neighbors": []
+  },
   {
-    "id": 15, "name": "e32", "width": "254", "height": "270", "Story": 0 },
+    "id": 15,
+    "name": "e32",
+    "story": 0,
+    "width": "254",
+    "height": "270",
+    "neighbors": []
+  },
   {
-    "id": 16, "name": "e31", "width": "341", "height": "270", "Story": 0 },
+    "id": 16,
+    "name": "e31",
+    "story": 0,
+    "width": "341",
+    "height": "270",
+    "neighbors": []
+  },
   {
-    "id": 17, "name": "e30", "width": "428", "height": "270", "Story": 0 },
+    "id": 17,
+    "name": "e30",
+    "story": 0,
+    "width": "428",
+    "height": "270",
+    "neighbors": []
+  },
   {
-    "id": 18, "name": "wcEg", "width": "603", "height": "220", "Story": 0 },
+    "id": 18,
+    "name": "wcEg",
+    "story": 0,
+    "width": "603",
+    "height": "220",
+    "neighbors": []
+  },
   {
-    "id": 19, "name": "stiegeBuffet", "width": "603", "height": "150", "Story": 0 },
+    "id": 19,
+    "name": "stiegeBuffet",
+    "story": 0,
+    "width": "603",
+    "height": "150",
+    "neighbors": []
+  },
   {
-    "id": 20, "name": "stiegeBuffetOg", "width": "603", "height": "150", "Story": 0 },
+    "id": 20,
+    "name": "stiegeBuffetOg",
+    "story": 0,
+    "width": "603",
+    "height": "150",
+    "neighbors": []
+  },
   {
-    "id": 21, "name": "eckeE13", "width": "60", "height": "110", "Story": 0 },
+    "id": 21,
+    "name": "eckeE13",
+    "story": 0,
+    "width": "60",
+    "height": "110",
+    "neighbors": []
+  },
   {
-    "id": 22, "name": "eckeE20", "width": "800", "height": "110", "Story": 0 },
+    "id": 22,
+    "name": "eckeE20",
+    "story": 0,
+    "width": "800",
+    "height": "110",
+    "neighbors": []
+  },
   {
-    "id": 23, "name": "eckeE01", "width": "800", "height": "290", "Story": 0 },
+    "id": 23,
+    "name": "eckeE01",
+    "story": 0,
+    "width": "800",
+    "height": "290",
+    "neighbors": []
+  },
   {
-    "id": 24, "name": "eckeE09", "width": "60", "height": "290", "Story": 0 },
+    "id": 24,
+    "name": "eckeE09",
+    "story": 0,
+    "width": "60",
+    "height": "290",
+    "neighbors": []
+  },
   {
-    "id": 25, "name": "eckeE02", "width": "620", "height": "290", "Story": 0 },
+    "id": 25,
+    "name": "eckeE02",
+    "story": 0,
+    "width": "620",
+    "height": "290",
+    "neighbors": []
+  },
   {
-    "id": 26, "name": "eckeE17", "width": "620", "height": "110", "Story": 0 },
+    "id": 26,
+    "name": "eckeE17",
+    "story": 0,
+    "width": "620",
+    "height": "110",
+    "neighbors": []
+  },
   {
-    "id": 27, "name": "o12", "width": "80", "height": "90", "Story": 1 },
+    "id": 27,
+    "name": "o12",
+    "story": 1,
+    "width": "80",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 28, "name": "o13", "width": "198", "height": "90", "Story": 1 },
+    "id": 28,
+    "name": "o13",
+    "story": 1,
+    "width": "198",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 29, "name": "o14", "width": "316", "height": "90", "Story": 1 },
+    "id": 29,
+    "name": "o14",
+    "story": 1,
+    "width": "316",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 30, "name": "o15", "width": "418", "height": "90", "Story": 1 },
+    "id": 30,
+    "name": "o15",
+    "story": 1,
+    "width": "418",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 31, "name": "o16", "width": "519", "height": "90", "Story": 1 },
+    "id": 31,
+    "name": "o16",
+    "story": 1,
+    "width": "519",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 32, "name": "o17", "width": "620", "height": "90", "Story": 1 },
+    "id": 32,
+    "name": "o17",
+    "story": 1,
+    "width": "620",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 33, "name": "o18", "width": "710", "height": "90", "Story": 1 },
+    "id": 33,
+    "name": "o18",
+    "story": 1,
+    "width": "710",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 34, "name": "o19", "width": "800", "height": "90", "Story": 1 },
+    "id": 34,
+    "name": "o19",
+    "story": 1,
+    "width": "800",
+    "height": "90",
+    "neighbors": []
+  },
   {
-    "id": 35, "name": "stiegeEingangOg", "width": "90", "height": "125", "Story": 1 },
+    "id": 35,
+    "name": "stiegeEingangOg",
+    "story": 1,
+    "width": "90",
+    "height": "125",
+    "neighbors": []
+  },
   {
-    "id": 36, "name": "o08", "width": "60", "height": "310", "Story": 1 },
+    "id": 36,
+    "name": "o08",
+    "story": 1,
+    "width": "60",
+    "height": "310",
+    "neighbors": []
+  },
   {
-    "id": 37, "name": "o07", "width": "177", "height": "310", "Story": 1 },
+    "id": 37,
+    "name": "o07",
+    "story": 1,
+    "width": "177",
+    "height": "310",
+    "neighbors": []
+  },
   {
-    "id": 38, "name": "o05", "width": "369", "height": "310", "Story": 1 },
+    "id": 38,
+    "name": "o05",
+    "story": 1,
+    "width": "369",
+    "height": "310",
+    "neighbors": []
+  },
   {
-    "id": 39, "name": "o04", "width": "464", "height": "310", "Story": 1 },
+    "id": 39,
+    "name": "o04",
+    "story": 1,
+    "width": "464",
+    "height": "310",
+    "neighbors": []
+  },
   {
-    "id": 40, "name": "o03", "width": "599", "height": "310", "Story": 1 },
+    "id": 40,
+    "name": "o03",
+    "story": 1,
+    "width": "599",
+    "height": "310",
+    "neighbors": []
+  },
   {
-    "id": 41, "name": "o29", "width": "519", "height": "270", "Story": 1 },
+    "id": 41,
+    "name": "o29",
+    "story": 1,
+    "width": "519",
+    "height": "270",
+    "neighbors": []
+  },
   {
-    "id": 42, "name": "wcOg", "width": "603", "height": "220", "Story": 1 },
+    "id": 42,
+    "name": "wcOg",
+    "story": 1,
+    "width": "603",
+    "height": "220",
+    "neighbors": []
+  },
   {
-    "id": 43, "name": "eckeO12", "width": "60", "height": "110", "Story": 1 },
+    "id": 43,
+    "name": "eckeO12",
+    "story": 1,
+    "width": "60",
+    "height": "110",
+    "neighbors": []
+  },
   {
-    "id": 44, "name": "eckeO19", "width": "800", "height": "110", "Story": 1 },
+    "id": 44,
+    "name": "eckeO19",
+    "story": 1,
+    "width": "800",
+    "height": "110",
+    "neighbors": []
+  },
   {
-    "id": 45, "name": "eckeSekretaeriat", "width": "740", "height": "110", "Story": 1 },
+    "id": 45,
+    "name": "eckeSekretaeriat",
+    "story": 1,
+    "width": "740",
+    "height": "110",
+    "neighbors": []
+  },
   {
-    "id": 46, "name": "sekretaeriat", "width": "755", "height": "185", "Story": 1 },
+    "id": 46,
+    "name": "sekretaeriat",
+    "story": 1,
+    "width": "755",
+    "height": "185",
+    "neighbors": []
+  },
   {
-    "id": 47, "name": "direktion", "width": "755", "height": "245", "Story": 1 },
+    "id": 47,
+    "name": "direktion",
+    "story": 1,
+    "width": "755",
+    "height": "245",
+    "neighbors": []
+  },
   {
-    "id": 48, "name": "eckeO03", "width": "620", "height": "290", "Story": 1 },
+    "id": 48,
+    "name": "eckeO03",
+    "story": 1,
+    "width": "620",
+    "height": "290",
+    "neighbors": []
+  },
   {
-    "id": 49, "name": "eckeO17", "width": "620", "height": "110", "Story": 1 },
+    "id": 49,
+    "name": "eckeO17",
+    "story": 1,
+    "width": "620",
+    "height": "110",
+    "neighbors": []
+  },
   {
-    "id": 50, "name": "eckeO08", "width": "60", "height": "290", "Story": 1 }
+    "id": 50,
+    "name": "eckeO08",
+    "story": 1,
+    "width": "60",
+    "height": "290",
+    "neighbors": []
+  }
 ]
