@@ -31,6 +31,6 @@ public class AuthenticationMiddleware : AuthenticationHandler<AuthenticationSche
             var ticket = new AuthenticationTicket(principal, Scheme.Name);
             return Task.FromResult(AuthenticateResult.Success(ticket));
         }
-        return Task.FromResult(AuthenticateResult.Fail("Invalid password"));
+        return Task.FromResult(AuthenticateResult.NoResult());
     }
 }
