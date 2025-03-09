@@ -49,4 +49,10 @@ public class AdminController(AdminService adminService, DataService dataService)
         adminService.PutActivities(activities);
         return Ok();
     }
+
+    [HttpGet("rooms")]
+    public ActionResult<string> GetRooms()
+    {
+        return Ok((dataService.GetNodes() ?? throw new FileNotFoundException()).Select(n => n.Name).Distinct().ToList());
+    }
 }
