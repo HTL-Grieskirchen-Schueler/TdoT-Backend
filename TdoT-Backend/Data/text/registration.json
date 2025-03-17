@@ -13,7 +13,11 @@
       {
         "heading": "Online Anmeldung:",
         "text": "Bis %DeadlineFurHomepageRegestrierung% via homepage. Zugangsdaten Aufbewahren!",
-        "info": "Hier sind hochzuladen: \nSchulnachricht, Geburtsurkunde, Meldezettel, Staatsbürgerschaftsnachweis"
+        "info": "Hier sind hochzuladen: \nSchulnachricht, Geburtsurkunde, Meldezettel, Staatsbürgerschaftsnachweis",
+      },
+      {
+        "text": "Jetzt Anmelden",
+        "link": "https://grieskirchen.htl-anmeldung.at/Standardform/NewRegistration"
       },
       {
         "text": "Die Anmeldung ist nur an einer Schule möglich"
