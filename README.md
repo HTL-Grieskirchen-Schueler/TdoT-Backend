@@ -1,3 +1,5 @@
+Ihr könnt mich (Stefan Wiesinger / Product Owner) unter stefanwiesinger2005@gmail.com erreichen.
+
 # TdoT-Backend (Tag der offenen Tür)
 
 This is the backend application for the "Tag der offenen Tür" (Open House Day) system for HTL Grieskirchen. The system manages registrations, activities, and navigation for school trial days.
