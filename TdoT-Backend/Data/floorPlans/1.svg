@@ -39,9 +39,10 @@
    
    <rect id="o33" x="645" y="125" width="80" height="36" fill="lightgray" stroke="black" stroke-width="2"/>
    <rect id="o34" x="645" y="161" width="80" height="36" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="o25" x="685" y="197" width="2" height="73" fill="black" stroke="black" stroke-width="2"/>
 
-   <rect id="stiegeEingangOben" x="75" y="125" width="30" height="145" fill="lightgray" stroke="black" stroke-width="2"/>
-   <rect id="stiegeBuffetOben" x="533" y="125" width="70" height="45" fill="lightgray" stroke="black" stroke-width="2"/>
-   <rect id="wcOg" x="533" y="170" width="70" height="100" fill="lightgray" stroke="black" stroke-width="2"/>
-
+   <rect id="oStairsEntrance" x="75" y="125" width="30" height="145" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="oStairsBuffet" x="533" y="125" width="70" height="45" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="oWc" x="533" y="170" width="70" height="100" fill="lightgray" stroke="black" stroke-width="2"/>
+   
 </svg>
