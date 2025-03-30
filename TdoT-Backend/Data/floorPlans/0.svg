@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="825" height="400"
+   viewBox="0 0 825 400"
+   xmlns="http://www.w3.org/2000/svg">
+   
+   <!-- Background -->
+   <rect x="0" y="0" width="825" height="400" fill="white" stroke="black" stroke-width="2" />
+   
+   <!-- Rooms -->
+   <rect id="e13" width="105" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e14" x="105" width="118" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e15" x="223" width="118" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e16" x="341" width="102" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e17" x="443" width="101" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e18" x="544" width="101" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e19" x="645" width="90" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e20" x="735" width="90" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   
+   <rect id="e33" x="105" y="125" width="87" height="145" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e32" x="192" y="125" width="87" height="145" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e31" x="279" y="125" width="87" height="145" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e30" x="366" y="125" width="87" height="145" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e29" x="453" y="125" width="80" height="145" fill="lightgray" stroke="black" stroke-width="2"/>
+
+   <rect id="e12" y="90" width="40" height="50" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e11" y="140" width="40" height="80" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e10" y="220" width="40" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e11" y="310" width="40" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   
+   <rect id="e07" x="195" y="310" width="95" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e06" x="290" y="310" width="55" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e05" x="345" y="310" width="95" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e03" x="440" y="310" width="35" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e04" x="475" y="310" width="150" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="e02" x="625" y="310" width="95" height="90" fill="lightgray" stroke="black" stroke-width="2"/>
+   
+   <rect id="e22" x="645" y="125" width="80" height="110" fill="lightgray" stroke="black" stroke-width="2"/>
+
+   <rect id="eStairsEntrance" x="75" y="125" width="30" height="145" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="eStairsBuffet" x="533" y="125" width="70" height="45" fill="lightgray" stroke="black" stroke-width="2"/>
+   <rect id="eWc" x="533" y="170" width="70" height="100" fill="lightgray" stroke="black" stroke-width="2"/>
+
+</svg>

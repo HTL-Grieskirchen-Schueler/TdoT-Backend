@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,4 +7,29 @@
     <RootNamespace>TdoT_Backend</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Update="Data\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\text\SchnupperTagAnmeldung.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+	<Target Name="BuildAngular" AfterTargets="Build" Condition="Exists('../TdoT-Admin-Panel/package.json')">
+		<Exec Command="pnpm install" WorkingDirectory="../TdoT-Admin-Panel" />
+		<Exec Command="pnpm run build" WorkingDirectory="../TdoT-Admin-Panel" />
+
+		<!-- Windows -->
+		<Exec Command="xcopy /E /I /Y ..\TdoT-Admin-Panel\dist\tdo-tadmin-panel\browser $(OutputPath)Data\html" Condition=" '$(OS)' == 'Windows_NT' " />
+		<!-- Linux/macOS -->
+		<Exec Command="cp -r ../TdoT-Admin-Panel/dist/tdo-tadmin-panel/browser/* $(OutputPath)Data/html" Condition=" '$(OS)' != 'Windows_NT' " />
+	</Target>
 </Project>

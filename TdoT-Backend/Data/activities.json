@@ -1,0 +1,37 @@
+[
+  {
+    "Name": "Security",
+    "Room": "e13Door",
+    "Description": "Ist dein Passwort sicher?"
+  },
+  {
+    "Name": "Sprachen",
+    "Room": "e02Door",
+    "Description": "Deutsch, Englisch, Französisch, Spanisch und Russisch"
+  },
+  {
+    "Name": "Naturwissenschaften",
+    "Room": "e32Door",
+    "Description": "Chemie und Physik"
+  },
+  {
+    "Name": "Aktivität Aula",
+    "Room": "e01Corner",
+    "Description": ""
+  },
+  {
+    "Name": "WC Erdgeschoss",
+    "Room": "eWcDoor",
+    "Description": ""
+  },
+  {
+    "Name": "Programmieren",
+    "Room": "o14",
+    "Description": "Ein Wunder der Technik"
+  },
+  {
+    "Name": "Game Development",
+    "Room": "o05",
+    "Description": ""
+  }
+]

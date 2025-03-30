@@ -1,0 +1,3 @@
+[submodule "TdoT-Admin-Panel"]
+	path = TdoT-Admin-Panel
+	url = https://github.com/HTL-Grieskirchen-Schueler/TdoTAdminPanel.git
