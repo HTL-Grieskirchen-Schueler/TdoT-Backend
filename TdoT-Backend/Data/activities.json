@@ -1,18 +1,28 @@
 [
   {
     "Name": "Security",
-    "Room": "o08",
+    "Room": "e13Door",
     "Description": "Ist dein Passwort sicher?"
   },
   {
     "Name": "Sprachen",
-    "Room": "o12",
+    "Room": "e02Door",
     "Description": "Deutsch, Englisch, Französisch, Spanisch und Russisch"
   },
   {
     "Name": "Naturwissenschaften",
-    "Room": "o13",
+    "Room": "e32Door",
     "Description": "Chemie und Physik"
+  },
+  {
+    "Name": "Aktivität Aula",
+    "Room": "e01Corner",
+    "Description": ""
+  },
+  {
+    "Name": "WC Erdgeschoss",
+    "Room": "eWcDoor",
+    "Description": ""
   },
   {
     "Name": "Programmieren",
